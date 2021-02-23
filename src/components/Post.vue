@@ -27,10 +27,8 @@ export default {
         .finally(res => console.log(res));
     }
   },
-  watch: {
-    $route() {
-      this.getPost(this.id);
-    }
+  created() {
+    this.getPost(this.id);
   }
 };
 </script>
@@ -38,10 +36,16 @@ export default {
 <style>
 .post {
   color: #fff;
+  max-width: 500px;
+  max-height: 500px;
   text-transform: lowercase;
 }
 .post__title {
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+.post__body {
+  font-size: 1.2rem;
 }
 </style>
