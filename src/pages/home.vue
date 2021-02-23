@@ -17,7 +17,7 @@ export default {
   name: "app",
   data() {
     return {
-      msg: "Posts list",
+      msg: "Post list",
       posts: []
     };
   },
@@ -33,8 +33,6 @@ export default {
 </script>
 
 <style>
-
-
 a {
   text-decoration: none;
   margin: auto;

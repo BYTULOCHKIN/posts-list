@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div class="container">
-      <router-link to="/"><h1>Posts List</h1></router-link>
-
+      <router-link to="/"
+        ><h1 v-bind:title="title">{{ msg }}</h1></router-link
+      >
       <div class="content">
         <router-view></router-view>
       </div>
@@ -10,7 +11,17 @@
   </div>
 </template>
 
-//
+<script>
+export default {
+  data() {
+    return {
+      msg: "Post list",
+      title: "Press me for go home"
+    };
+  }
+  
+};
+</script>
 
 <style>
 * {
@@ -53,5 +64,3 @@ h1 {
   padding: 20px;
 }
 </style>
-
-<script></script>
