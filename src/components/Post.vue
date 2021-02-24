@@ -14,17 +14,16 @@ export default {
   data() {
     return {
       post: null,
-      endpoint: "https://jsonplaceholder.typicode.com/posts/"
+      link: "https://jsonplaceholder.typicode.com/posts/"
     };
   },
 
   methods: {
     getPost(id) {
-      fetch(this.endpoint + id)
+      fetch(this.link + id)
         .then(res => res.json())
         .then(json => (this.post = json))
-        .catch(error => console.error(error))
-        .finally(res => console.log(res));
+        .catch(error => console.error(error));
     }
   },
   created() {
