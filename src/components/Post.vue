@@ -2,7 +2,7 @@
   <div class="post" v-if="post">
     <h2 class="post__title">
       {{ post.title }} <br />
-      (Author - id{{ post.id }})
+      (Author - id{{ post.userId }})
     </h2>
     <p class="post__body">{{ post.body }}</p>
   </div>
