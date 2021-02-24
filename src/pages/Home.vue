@@ -25,8 +25,7 @@ export default {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then(data => data.json())
       .then(json => (this.posts = json))
-      .catch(error => console.error("Виникла помилка", error))
-      .finally(res => console.log(res));
+      .catch(error => console.error("Виникла помилка", error));
   }
 };
 </script>
