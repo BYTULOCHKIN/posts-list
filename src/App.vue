@@ -19,7 +19,6 @@ export default {
       title: "Press me for go home"
     };
   }
-  
 };
 </script>
 
